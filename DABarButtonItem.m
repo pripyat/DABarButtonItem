@@ -46,6 +46,11 @@
 	return self;
 }
 
+- (void)setImage:(UIImage *)image
+{
+	[self.button setImage:image forState:UIControlStateNormal];
+}
+
 - (void)setHighlightTouch:(BOOL)flag
 {
 	self.button.showsTouchWhenHighlighted = flag;

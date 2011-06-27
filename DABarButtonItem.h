@@ -36,6 +36,13 @@
 - (id)initWithButtonImage:(UIImage *)image target:(id)target action:(SEL)action highlightsTouches:(BOOL)flag;
 
 /*
+ Updates the image of the DABarButtonItem to the new one.
+ @param image - The image that the DABarButtonItem instance should use.
+ */
+
+- (void)setImage:(UIImage *)image;
+
+/*
  Returns the underlying UIButton instance
  @property button - The underlying UIButton instance.
  @returns A UIButton instance that is used as the custom view.
