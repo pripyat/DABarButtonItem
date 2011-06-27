@@ -1,9 +1,8 @@
 //
 //  DABarButtonItem.m
-//  Cookie Stumbler Mobile
 //
 //  Created by David Schiefer on 27.06.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 David Schiefer. All rights reserved.
 //
 
 #import "DABarButtonItem.h"
