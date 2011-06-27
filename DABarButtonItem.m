@@ -1,8 +1,9 @@
 //
 //  DABarButtonItem.m
+//  Cookie Stumbler Mobile
 //
 //  Created by David Schiefer on 27.06.11.
-//  Copyright 2011 David Schiefer. All rights reserved.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "DABarButtonItem.h"
@@ -15,13 +16,30 @@
 
 - (id)initWithButtonImage:(UIImage *)image
 {
-	// Initialize the UIButton
 	UIImage *buttonImage = image;
+	
 	_button = [UIButton buttonWithType:UIButtonTypeCustom];
 	[_button setImage:buttonImage forState:UIControlStateNormal];
 	_button.frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height);
 	
 	_button.showsTouchWhenHighlighted = YES;
+	
+	[self setCustomView:self.button];
+	
+	return self;
+}
+
+- (id)initWithButtonImage:(UIImage *)image target:(id)target action:(SEL)action highlightsTouches:(BOOL)flag
+{
+	UIImage *buttonImage = image;
+	
+	_button = [UIButton buttonWithType:UIButtonTypeCustom];
+	[_button setImage:buttonImage forState:UIControlStateNormal];
+	_button.frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height);
+	
+	_button.showsTouchWhenHighlighted = flag;
+	
+	[_button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
 	
 	[self setCustomView:self.button];
 	
