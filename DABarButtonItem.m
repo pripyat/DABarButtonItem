@@ -1,11 +1,3 @@
-//
-//  DABarButtonItem.m
-//  Cookie Stumbler Mobile
-//
-//  Created by David Schiefer on 27.06.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "DABarButtonItem.h"
 
 
@@ -13,6 +5,7 @@
 
 @synthesize button = _button;
 @synthesize highlightTouch = _highlightTouch;
+@synthesize enabled;
 
 - (id)initWithButtonImage:(UIImage *)image
 {
@@ -56,6 +49,20 @@
 	self.button.showsTouchWhenHighlighted = flag;
 }
 
+- (void)setEnabled:(BOOL)flag
+{
+	if (flag)
+	{
+		_button.enabled = YES;
+		self.button.showsTouchWhenHighlighted = YES;
+	}
+	else
+	{
+		_button.enabled = NO;
+		self.button.showsTouchWhenHighlighted = NO;
+	}
+}
+		
 - (void)dealloc
 {
 	self.button = nil;

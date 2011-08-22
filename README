@@ -1,3 +1,1 @@
-DABarButtonItem Copyright 2011 David Schiefer.
-
-You may use/modify this class in any type of project as long as you keep the copyright notice and header notices intact.
+UIBarButtonItem's image handling behaves differently in iOS 5 and in iOS 4. This causes some images to be displayed much smaller than they actually are. This class fixes this imcompatability.

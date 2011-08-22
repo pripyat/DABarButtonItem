@@ -7,6 +7,7 @@
 //  About this class: UIBarButtonItem scales a lot of images based on their width in iOS 4. This can produce
 //  undesired results with the appearance of the UIBarButtonItem. This class takes advantage of the scaling
 //  properties of UIButton to achieve the desired effect.
+//  You may use this class in any project, but please leave this header intact.
 
 #import <Foundation/Foundation.h>
 
@@ -57,5 +58,13 @@
  */
 
 @property (nonatomic, assign) BOOL highlightTouch;
+
+/*
+ Defines whether the UIButton is enabled or not.
+ @property enabled - Returns a boolean whether the UIButton is enabled or not
+ @returns An enabled/disabled DABarButtonItem instance.
+ */
+
+@property (nonatomic, assign) BOOL enabled;
 
 @end
