@@ -1,1 +1,1 @@
-UIBarButtonItem's image handling behaves differently in iOS 5 and in iOS 4. This causes some images to be displayed much smaller than they actually are. This class fixes this incompatibility.
+UIBarButtonItem scales a lot of images based on their width in iOS 4. This can produce undesired results with the appearance of the UIBarButtonItem. This class takes advantage of the scaling properties of UIButton to achieve the desired effect.
