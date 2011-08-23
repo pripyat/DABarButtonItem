@@ -1,1 +1,1 @@
-UIBarButtonItem's image handling behaves differently in iOS 5 and in iOS 4. This causes some images to be displayed much smaller than they actually are. This class fixes this imcompatability.
+UIBarButtonItem's image handling behaves differently in iOS 5 and in iOS 4. This causes some images to be displayed much smaller than they actually are. This class fixes this incompatibility.
